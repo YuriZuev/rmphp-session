@@ -1,6 +1,6 @@
 ## Rmphp/Session
 
-DB component for **Rmphp**
+Session component for **Rmphp**
 
 ## Install
 
