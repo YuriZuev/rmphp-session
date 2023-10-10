@@ -6,7 +6,7 @@
  * Time: 14:34
  */
 
-namespace Rmphp\Session\Session;
+namespace Rmphp\Session;
 
 interface SessionInterface {
 

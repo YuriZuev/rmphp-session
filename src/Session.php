@@ -1,6 +1,6 @@
 <?php
 
-namespace Rmphp\Session\Session;
+namespace Rmphp\Session;
 
 class Session implements SessionInterface {
 
