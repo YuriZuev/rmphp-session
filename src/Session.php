@@ -19,6 +19,11 @@ class Session implements SessionInterface {
 	}
 
 	/** @inheritDoc */
+	public function __invoke(string $name = "", string $type = ""): mixed {
+		return $this->get($name, $type);
+	}
+
+	/** @inheritDoc */
 	public function has(string $name = "") : bool {
 		return (!empty($name)) ? isset($this->getSession()[$name]) : !empty($this->getSession());
 	}
@@ -50,7 +55,9 @@ class Session implements SessionInterface {
 		else $_SESSION = [];
 	}
 
-	/** @inheritDoc */
+	/**
+	 * @return array
+	 */
 	private function getSession() : array {
 		return $_SESSION;
 	}

@@ -21,6 +21,13 @@ interface SessionInterface {
 	 * @param string $type
 	 * @return mixed
 	 */
+	public function __invoke(string $name = "", string $type = ""): mixed;
+
+	/**
+	 * @param string $name
+	 * @param string $type
+	 * @return mixed
+	 */
 	public function get(string $name = "", string $type = ""): mixed;
 
 	/**
